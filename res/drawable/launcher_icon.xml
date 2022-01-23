@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:width="24dp"
+    android:viewportHeight="80"
+    android:viewportWidth="100">
+
+    <path
+        android:fillColor="#404040"
+        android:pathData="M 0, 0 L 0, 150 L 100, 150 L 100, 0Z"/>
+    <path
+        android:fillColor="#7fdbff"
+        android:pathData="M 5, 5 L 5, 25 L 95, 25 L 95, 5Z"/>
+    <path
+        android:fillColor="#f6fcff"
+        android:pathData="M 5, 30 L 5, 35 L 95, 35 L 95, 30Z"/>
+    <path
+        android:fillColor="#f6fcff"
+        android:pathData="M 5, 40 L 5, 45 L 95, 45 L 95, 40Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 50 L 5, 55 L 95, 55 L 95, 50Z"/>
+
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 60 L 5, 65 L 95, 65 L 95, 60Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 70 L 5, 75 L 60, 75 L 60, 70Z"/>
+    <path
+        android:fillColor="#ff6464"
+        android:pathData="M 65, 70 L 65, 75 L 95, 75 L 95, 70Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 80 L 5, 85 L 95, 85 L 95, 80Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 90 L 5, 95 L 95, 95 L 95, 90Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 100 L 5, 105 L 95, 105 L 95, 100Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 100 L 5, 105 L 95, 105 L 95, 100Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M 5, 110 L 5, 115 L 95, 115 L 95, 110Z"/>
+</vector>

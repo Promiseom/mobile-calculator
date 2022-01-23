@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="CalculatorButtonStyle" parent="Widget.AppCompat.Button">
+    <item name="android:textSize">10sp</item>
+  </style>
+
+  <style name="FunctionKeypadStyle" parent="CalculatorButtonStyle">
+
+  </style>
+
+  <style name="MainKeypadStyle" parent="CalculatorButtonStyle">
+
+  </style>
+
+  <!--- Style for buttons that belong to any specific fragment inthe app-->
+  <style name="StandardButtonStyle" parent="Widget.AppCompat.Button">
+
+  </style>
+
+</resources>

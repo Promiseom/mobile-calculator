@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.5"
+      android:orientation="vertical"
+      android:paddingBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="#a6c9fe"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp">
+
+      <TextView
+          android:id="@+id/txt_shift"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="25dp"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          android:text="SHIFT"
+          android:textColor="@color/black"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/txt_bin"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="25dp"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          android:text="BIN"
+          android:textColor="@color/black"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/txt_dec"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="25dp"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          android:text="DEC"
+          android:textColor="@color/black"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/txt_oct"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="25dp"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          android:text="OCT"
+          android:textColor="@color/black"
+          android:textSize="12sp" />
+
+      <TextView
+          android:id="@+id/txt_hex"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="25dp"
+          android:paddingLeft="2dp"
+          android:paddingRight="2dp"
+          android:text="HEX"
+          android:textColor="@color/black"
+          android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mathExpressionText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#a6c9fe"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollHorizontally="true"
+        tools:text="350 + 230"
+        android:inputType="numberSigned"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/expressionResultText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#a6c9fe"
+        android:gravity="right|center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold|normal" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="2"
+      android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/function_pad"
+        android:name="com.aemis.promiseanendah.advancedscientificcalculator.FunctionPadContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        tools:layout="@layout/function_pad_fragment_content">
+
+    </fragment>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/number_pad"
+        android:name="com.aemis.promiseanendah.advancedscientificcalculator.NumberPadFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:layout="@layout/main_num_pad_fragment_content">
+
+    </fragment>
+  </LinearLayout>
+
+</LinearLayout>

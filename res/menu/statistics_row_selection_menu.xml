@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <item
+      android:id="@+id/action_number_of_selected"
+      android:title="1"
+      app:showAsAction="always"/>
+
+  <item
+      android:id="@+id/actions_clear_all_selected_fields"
+      app:icon="@drawable/ic_clear_data"
+      android:title="Clear Data"
+      app:showAsAction="always"/>
+
+  <item
+      android:id="@+id/action_delete_selected_rows"
+      app:icon="@drawable/ic_delete"
+      android:title="Delete Selected"
+      app:showAsAction="always"/>
+
+  <item
+      android:id="@+id/action_deselect_all"
+      android:title="Deselect All"
+      app:showAsAction="always"/>
+
+</menu>

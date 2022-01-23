@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/table_row_data"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/stat_row_height">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="s/n"
+        android:gravity="center"
+        android:inputType="none"
+        tools:text="0"
+        android:layout_margin="@dimen/stat_data_field_margin"
+        android:textSize="@dimen/stat_data_field_content_size"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/stat_data_field_margin"
+        android:layout_weight="1"
+        android:contentDescription="upper_boundary"
+        android:inputType="number|numberSigned|numberDecimal"
+        tools:text="0"
+        android:padding="5dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/stat_data_field_margin"
+        android:layout_weight="1"
+        android:contentDescription="lower_boundary"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:padding="5dp"
+        tools:text="0"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/stat_data_field_margin"
+        android:layout_weight="1"
+        android:contentDescription="class_mark"
+        android:inputType="number|numberSigned|numberDecimal"
+        tools:text="0"
+        android:padding="5dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/stat_data_field_margin"
+        android:layout_weight="1"
+        android:contentDescription="frequency"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textAlignment="center"
+        android:padding="5dp"
+        tools:text="0"/>
+
+</TableRow>

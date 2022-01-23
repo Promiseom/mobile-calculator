@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/txt_size_18"
+            android:text="Using The Extended Editor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="There is an alternate way to view and edit the content of the data and frequency fields. No all fields are editable, you can only view the content of the other fields. The extended editor was made due to insufficient space to view the entire the value held by some fields, which means you might see the entire length of the number until using a large screen or using the extended editor."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/stat_rows_with_data"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To use the extended editor for any field, long click the field and the editor will popup in a dialog."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/stat_extended_editor_editable"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you click ok on the dialog, any change made to the text in the editor in the dialog will reflect in the view longed clicked earlier. If however cancel is clicked, the change will be not be effective. This however only applies to editable fields, uneditable fields are greyed out(disabled), you can only view the content of such fields."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/stat_extended_editor_uneditable"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Using the copy button shown below, you can copy the content of one field to the clipboard and use it any where on your device."/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/stat_extended_editor_copy_btn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editor Labels:"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/stat_extended_editor_labels"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The selected labels in the editor imply the following: "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1: Contains the value 'View/Edit' which implies the use can view and edit the content of the editor, while 'View' indicates the user can only view the value of the editor."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2: Indicates the row number of the field that is being extended."/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3: Indicates the type of field that is being extended, it contains the following values: Data, Frequency, (x - x') for Deviation, (x - x')² for Deviation squared, f(x - x')² for Deviation Squared times Frequency fields."/>
+
+
+    </LinearLayout>
+</ScrollView>

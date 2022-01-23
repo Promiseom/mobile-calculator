@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item android:title="CALCULATOR">
+            <menu>
+                <group android:checkableBehavior="single"
+                    android:id="@+id/calculator_group">
+                    <item
+                        android:id="@+id/standard_calculator_action"
+                        android:title="Standard"/>
+                    <item
+                        android:id="@+id/scientific_calculator_action"
+                        android:title="Scientific"
+                        android:visible="false"/>
+                    <item
+                        android:id="@+id/action_calculator_matrix"
+                        android:actionLayout="@layout/premium_button_layout"
+                        android:title="Matrices"
+                        android:visible="false"/>
+                    <item
+                        android:id="@+id/date_calculator_action"
+                        app:actionLayout="@layout/premium_button_layout"
+                        android:title="Date Calculation"/>
+                </group>
+            </menu>
+        </item>
+
+        <item android:title="STATISTICS">
+            <menu>
+                <group android:checkableBehavior="single"
+                    android:id="@+id/statistics_group">
+                    <item android:id="@+id/action_statistics_ungrouped"
+                          android:title="Ungrouped Data"/>
+                    <item android:id="@+id/action_statistics_grouped"
+                          android:title="Grouped Data"/>
+                </group>
+            </menu>
+        </item>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/converter_group">
+
+        <item android:title="CONVERTERS"
+            android:id="@+id/action_converter_group"
+            app:actionLayout="@layout/arrow_down_layout_white"/>
+        <item
+            android:id="@+id/converter_number_base"
+            android:title="Number Base" />
+        <item
+            android:id="@+id/converter_volume"
+            android:title="Volume"/>
+        <item
+            android:id="@+id/converter_length"
+            android:title="Length"/>
+        <item
+            android:id="@+id/converter_area"
+            android:title="Area"/>
+        <item
+            android:id="@+id/converter_weight_and_mass"
+            android:title="Weight and Mass"/>
+        <item
+            android:id="@+id/converter_temperature"
+            android:title="Temperature"/>
+        <item
+            android:id="@+id/converter_pressure"
+            android:title="Pressure"/>
+        <item
+            android:id="@+id/converter_energy"
+            android:title="Energy"/>
+        <item
+            android:id="@+id/converter_angle"
+            android:title="Angle"/>
+        <item
+            android:id="@+id/converter_speed"
+            android:title="Speed"/>
+        <item
+            android:id="@+id/converter_time"
+            android:title="Time"/>
+        <item
+            android:id="@+id/converter_power"
+            android:title="Power"/>
+        <item
+            android:id="@+id/converter_data"
+            android:title="Data"/>
+    </group>
+
+        <item
+            android:id="@+id/action_about_app"
+            android:title="About"/>
+        <item
+            android:id="@+id/action_settings_main"
+            android:title="Settings"/>
+        <item
+            android:id="@+id/action_power_off"
+            android:title="Power Off"/>
+</menu>

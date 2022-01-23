@@ -1,0 +1,168 @@
+[Creating a reusable recycler view with cardview]
+A class to handle any recycler view that uses cardview in its layout to display data.
+
+This will be implemented because all lists that contain data in the calculator will use this cardview.
+A cardview is implemented instead of a table to avoid the user scrolling horizontally to view the data.
+And also to ease the editing of data items that have already been added.
+
+A parent creates a dialog and listeners to the dialog. When the dialog is about to close, it calls
+a function on the listener, if the function returns true, the dialog dismisses(closes) else
+it does not close. After closing it calls another method to signify it has closed.
+When this dialog is closed it returns a DialogResult in the onCloseDialog method of the listener.
+After the listener executes the close method it can then call a getter method to retrieve any needed.
+
+How calculator fragments are created:
+When you launch the app from the launcher, the MainActivity is started, it check if the intent that
+started it has a value to indicate if is resuming or the app just starting.
+If false then the app has just started -> the default fragment is then created.
+If true then the app is to resume, the app then
+
+Statistics: (grouped data)
+To use the MCT calculator, data is required, the user can input data in 2 different forms,
+1. table of intervals and frequencies
+2. real data values and given interval to use.
+
+if the user give the latter, the table of intervals and frequencies will be contructed based on the given interval
+if the table of interval is given with frequencies the data is used.
+
+ALGORITHM TO HANDLE TABLE OF BOUNDARIES AND INTERVALS WITH FREQUENCIES:
+We're given a table of boundaries and we're to find the measures of central tendency,
+the real numeric figures are not given.
+1.
+
+
+Added Statistics Group Item: All Statistics related modules will fall under this group [to be added]
+
+Statistics(Weighted Data)
+Statistics(Grouped Data) design and prototyping starts to 31-5-2019
+
+OUTPUT PATH: app\build\outputs\apk\debug\
+
+Editor Next Editor [Done]
+Ability to copy every numeric value in every fragment or module [in progress]
+Calculator Dialog: Use the calculator fragment as a simple calculator in other fragment modules []
+Matrix Calculator []
+
+
+MATRICES
+The following are the functions that can be carried out on a matrix
+
+Function                                            |    Result
+--------------------------------------------------------------------------
+compare the equality/equivalence of 2 matrices      |    boolean
+get minor matrix                                    |    matrix
+transpose matrix                                    |    matrix
+get determinant                                     |    double
+add, subtraction and multiplication of matrices     |    matrix
+get cofactor matrix                                 |    matrix
+get adjoint matrix                                  |    matrix
+get inverse matrix                                  |    matrix
+
+
+STATISTICS HELP DIALOG
+>>>[Done]Currently the help dialog for statistics does not contain any help, add content(help content to the dialog)
+
+NAVIGATION DESIGN PATTERN FOR TABLETS:
+>>>[Done]Make the navigation drawer work differently on tablets/devices with larger screen sizes
+
+DATE ARITHMETICS:
+>>>[Done]Fix data arithmetic problems while adding months and days to the date - 17/12/2018
+
+
+>>>FRAGMENT SETTINGS
+Each calc module should have it's own settings so that the user can make all adjustments for the fragment without going outside the fragment
+***The setting will be added as a menu item that brings up the setting dialog box which contain the settings.
+
+>>>Create a confirmation dialog box for clearing of field data, deleting selected items and clearing all field data
+
+>>>[DONE]Work on the serial numbering of the rows in the statistics fragment
+The serial number is based on the number of rows in the fragment.
+When a new item has been added, the serial numbers for every row is recalculated.
+
+>>>[DONE]Work on the selecting of rows in the statistics fragment
+>>>Work on the removing of rows in the statistics fragment
+
+>>>[]Rethink about the settings of the app, does the settings need its own activity: can't it be a dialog?
+
+Scientific Calculator: Content Insertion
+
+Determine the content to add to the screen
+Determine where the cursor should be in the content to add to the screen
+Insert the content to add to screen
+Change the position of the cursor on the screen to where it's to be on the content that has been added to the screen.
+
+Insertion of a dot in an expression:
+
+
+This list contains all the buttons in the scientific calculator and their functions:
+[*] Next to the button means the function has been implemented in the calc
+
+Primary Button                Secondary Button            Primary Function                         Secondary Function
+___________________________________________________________________________________________________________________________________________
+Shift
+Menu
+[*]Arrow Left
+[*]Arrow Right
+n!
+Const
+d/dy
+sqr(x)                          cube-root(x)            return square root of x                   Return the cube root of x
+pow(x, 2)                       pow(x, 3)               return x to power of 2                    return x to power of 3
+pow(x, n)                       n root of x             return x to power of n                    return log x to base n
+log                             pow(10, n)              return log of operand                     return 10 to power of n
+e                               pow(e, n)
+nPr                                                     find permutation
+nCr                                                     find combination
+hyp
+sin                             asin
+cos                             acos
+tan                             atan
+gdc                                                     return the greatest common factor of 2 numbers
+lcm                                                     find the lcm of 2 numbers
+[*](
+[*])
+M-                                                      calculator history
+M+                                                      save calc data
+
+[*] 0                               Rnd
+[*] 1
+[*] 2                               BIN                                                                change the calc numeral mode to Binary
+[*] 3                               OCT                                                                change the calc numeral mode to Octal
+[*] 4
+[*] 5
+[*] 6
+[*] 7
+[*] 8
+[*] 9
+
+Del
+AC                               OFF                                                               close the calc
++                                DEC                                                               change the calc numeral mode to Decimal
+/
+*
+-                                HEX                                                               change the calc numeral mode to Hex
+Ans                              DRG                     get the result of the previously calculated result
+=                                %
+Exp                              PI                                                                PI constant
+dot(.)                           Ran#
+
+How to manage Functions:
+Functions have brackets, these if these brackets are removed, the function is broken and the function parser will not be able to
+find and execute the functions. This means the calc has to ensure the functions always have their opening and closing brackets.
+
+And a function can only be deleted when the cursor is after the first bracket of the function as in: sin(|)
+When you attempt to delete the closing bracket of a function, the bracket is skipped and the cursor is placed one position backward,
+this is to prevent the removal of that bracket.
+
+PARSING AND CALCULATING EXPRESSION:
+The following are the things that take place before the calculation of the result of an expression:
+1. Scan the expression for syntax error!:
+   this is done by checking the position of operator and operands and parenthesis placement.
+   if the syntax is incorrect, the error will be displayed and further operations will be terminated.
+2. Function resolution:
+   2 ways this can be done:
+   1. Recursive method: take the expressions and recursively revolve all the inner ones
+   2. Iterative method: start the resolution from the inner most functions
+   After the resolution the all the functions are replaced with their resulting values
+3. Now the expression is free of functions and an expression in a format that can be parsed by the
+   calculateExpression method in the Mathematics package, the result of the expression is calculated.

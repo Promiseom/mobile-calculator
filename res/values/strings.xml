@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_open">Navigation Open</string>
+    <string name="navigation_close">Navigation Close</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_theme">pref_theme</string>
+    <string name="pref_number_precision">pref_number_precision</string>
+    <string name="pref_startup_mode">pref_startup_mode</string>
+
+    <string name="pref_theme_default_value">1</string>
+    <string name="pref_number_precision_default_value">14</string>
+    <string name="pref_number_startup_mode_default_value">0</string>
+
+    <string name="division_mathematical_notation">÷</string>
+    <string name="division_slash_notation">/</string>
+
+    <string name="is_large_screen">false</string>
+
+    <!-- Text for statistics fragment-->
+    <string name="str_add">Add</string>
+    <string name="str_insert">Insert</string>
+    <string name="str_users_guide">Users Guide</string>
+    <string name="str_serial_number">s/n</string>
+    <string name="str_x">x</string>
+    <string name="str_f">f</string>
+    <string name="str_deviation">(x - x`)</string>
+    <string name="str_deviation_squared">(x - x`)²</string>
+    <string name="str_deviation_squared_times_freq">f(x - x`)²</string>
+
+    <string name="str_measures_central_tendency">Measures Of Central Tendency</string>
+    <string name="str_calculate">Calculate</string>
+    <string name="str_recalculate">Recalculate</string>
+    <string name="str_view_result">View Result</string>
+    <string name="str_add_row">Add Row</string>
+    <string name="str_calculate_result">Calculate Result</string>
+    <string name="str_add_rows">Add Rows</string>
+    <string name="str_clear_all_fields">Clear All Fields</string>
+    <string name="str_remove_all_rows">Remove All Rows</string>
+    <string name="str_help">Help</string>
+
+    <string name="str_add_insert_rows">Add/Insert Rows</string>
+    <string name="str_row_count">Row Count</string>
+    <string name="str_insert_at_pos">Insert at Position</string>
+    <string name="str_index">Index</string>
+    <string name="str_invalid_index">Invalid Index!</string>
+    <string name="str_invalid_amount">Invalid Amount!</string>
+    <string name="str_new_rows_amount_error">Can add a max of 100 rows at a time!</string>
+
+    <string name="str_statistical_measures">Statistical Measures</string>
+    <string name="str_set_cardinality">Set Cardinality</string>
+    <string name="str_total_sum">Total Sum</string>
+    <string name="str_arithmetic_mean">Arithmetic Mean</string>
+    <string name="str_geometric_mean">Geometric Mean</string>
+    <string name="str_harmonic_mean">Harmonic Mean</string>
+    <string name="str_rms">Root Mean Square</string>
+    <string name="str_median">Median</string>
+    <string name="str_modal_values">Modal Values</string>
+    <string name="str_range">Range</string>
+    <string name="str_variance">Variance</string>
+    <string name="str_std_deviation">Standard Deviation</string>
+    <string name="str_mean_deviation">Mean Deviation</string>
+
+    <string name="str_confirm_delete">Confirm Delete</string>
+    <string name="str_confirm_delete_message">This will delete all the rows and clear the result. Do you want to continue?</string>
+    <string name="str_confirm_delete_message2">Note, that the calculated result will be recalculated</string>
+
+    <string name="str_confirm_fields_clear">Confirm Field Clear</string>
+    <string name="str_confirm_clear_all_fields_message">Are you sure you want to continue? The calculated result might be affected.</string>
+
+    <!-- Text for about app dialog-->
+    <string name="str_version">Version</string>
+
+    <string name="str_confirm_title">Confirm Title</string>
+    <string name="str_confirm_dialog_message">Confirm Dialog Message</string>
+    <string name="str_confirm_quit">Confirm Quit</string>
+    <string name="str_confirm_quit_message">Are you sure you want to quit?</string>
+
+
+    <!--Text for stat_help_adding_rows layout -->
+    <string name="str_adding_single_row">Adding a single Row</string>
+    <string name="str_help_txt1">To add a new row to the table click the plus button on the action bar.</string>
+    <string name="str_help_txt2">This will append a new rows to the table.</string>
+    <string name="str_help_txt3">Adding or Inserting Multiple Rows</string>
+    <string name="str_help_txt4">To add more than one row at a time, click the add multiple button on the action bar</string>
+</resources>

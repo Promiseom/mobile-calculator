@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/txt_amount_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/str_row_count"
+        android:inputType="number" />
+
+    <CheckBox
+        android:id="@+id/insert_check_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_insert_at_pos" />
+
+    <EditText
+        android:id="@+id/txt_add_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/str_index"
+        android:inputType="number" />
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/list_container"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="invisible">
+        <LinearLayout
+            android:id="@+id/list_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_header_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/all_items_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_item_padding"
+                android:layout_marginRight="@dimen/list_item_padding" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:paddingLeft="@dimen/list_item_padding"
+                android:paddingRight="@dimen/list_item_padding"
+                android:textStyle="bold"
+                android:text="S/n"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/list_item_padding"
+                android:paddingRight="@dimen/list_item_padding"
+                android:text="Data Item"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:paddingLeft="@dimen/list_item_padding"
+                android:paddingRight="@dimen/list_item_padding"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:text="Frequency"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/raw_data_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Data to Display."/>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_add_data"
+        app:srcCompat="@drawable/ic_add_cross"
+        android:scaleType="fitCenter"
+        app:elevation="12dp"
+        app:borderWidth="0dp"
+        style="@style/floatingActionStyle"/>
+
+</RelativeLayout>

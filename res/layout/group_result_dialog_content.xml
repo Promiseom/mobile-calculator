@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dialog_content_padding">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dialog_content_padding"
+            android:orientation="vertical"
+            android:text="Statistics Result (Grouped Data)"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="*Instruction: Click and hold editable field to copy data."
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Set Cardinality" />
+        <EditText
+            android:id="@+id/txt_result_cardinality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Arithmetic Mean" />
+        <EditText
+            android:id="@+id/txt_result_arithmetic_mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Harmonic Mean" />
+        <EditText
+            android:id="@+id/txt_result_harmonic_mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Geometric Mean" />
+
+        <EditText
+            android:id="@+id/txt_result_geometric_mean"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Root Mean Square" />
+        <EditText
+            android:id="@+id/txt_result_root_mean_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Median" />
+        <EditText
+            android:id="@+id/txt_result_median"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Quartile" />
+        <EditText
+            android:id="@+id/txt_result_quartile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="First Quartile" />
+        <EditText
+            android:id="@+id/txt_result_first_quartile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Third Quartile" />
+        <EditText
+            android:id="@+id/txt_result_third_quartile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Semi-Inter Quartile Range" />
+        <EditText
+            android:id="@+id/txt_result_semi_inter_quartile_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Percentile" />
+        <EditText
+            android:id="@+id/txt_result_percentile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Mode" />
+        <EditText
+            android:id="@+id/txt_result_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Standard Deviation" />
+        <EditText
+            android:id="@+id/txt_result_standard_deviation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Variance" />
+        <EditText
+            android:id="@+id/txt_result_variance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dialog_content_padding"
+            android:text="Mean Deviation" />
+        <EditText
+            android:id="@+id/txt_result_mean_deviation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>

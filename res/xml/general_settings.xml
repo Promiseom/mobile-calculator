@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="@string/pref_theme"
+        android:title="Theme"
+        android:dialogTitle="Choose Theme"
+        android:entries="@array/pref_themes_entries"
+        android:entryValues="@array/pref_themes_values"
+        android:defaultValue="1"/>
+
+    <ListPreference
+        android:key="@string/pref_startup_mode"
+        android:title="Start Up Mode"
+        android:dialogTitle="Choose Mode"
+        android:entries="@array/pref_calculator_startup_mode_entries"
+        android:entryValues="@array/pref_calculator_startup_mode_values"
+        android:defaultValue="@string/pref_number_startup_mode_default_value"/>
+
+    <CheckBoxPreference
+        android:key="pref_screen_brightness_lock"
+        android:title="Screen Brightness Lock"
+        android:summary="Keep the screen from automatically dimming while using the app"/>
+
+</PreferenceScreen>

@@ -1,0 +1,14 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">44dp</dimen>
+    <dimen name="default_txt_size">17sp</dimen>
+
+    <!-- Text size for about dialog-->
+    <dimen name="cal_module">35sp</dimen>
+    <dimen name="simplified_cal_module">29sp</dimen>
+    <dimen name="copyright">21sp</dimen>
+    <dimen name="aemis_dev">30sp</dimen>
+    <dimen name="app_features">20sp</dimen>
+</resources>

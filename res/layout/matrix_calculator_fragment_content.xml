@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aemis.promiseanendah.advancedscientificcalculator.MatrixCalculatorFragment">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/matrix_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3" />
+
+    <LinearLayout
+        android:id="@+id/matrix_calc_function_pad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <Button
+            android:id="@+id/btn_add_rows"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Row"/>
+        <Button
+            android:id="@+id/btn_add_cols"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Column"/>
+    </LinearLayout>
+
+</LinearLayout>

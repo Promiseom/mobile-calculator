@@ -1,0 +1,110 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Base light application theme without action bar-->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/black</item>
+        <item tools:targetApi="23" name="android:drawableTint">@color/black</item>
+<!--        <item name="android:tint">@color/black</item>-->
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="listBackgroundColor">@color/listBackgroundLight</item>
+    </style>
+
+    <!-- Base Dark Theme without action bar-->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item tools:targetApi="23" name="android:drawableTint">@color/white</item>
+<!--        <item name="android:tint">@color/white</item>-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="listBackgroundColor">@color/listBackgroundDark</item>
+    </style>
+
+    <!--Light application theme with action bar-->
+    <style name="AppTheme.Light.ActionBar" parent="AppTheme.Light">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <!-- Dark application theme with action bar-->
+    <style name="AppTheme.Dark.ActionBar" parent="AppTheme.Dark">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Base.ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--- Style for buttons that belong to any specific fragment in the app-->
+    <style name="StandardButtonStyle" parent="Widget.AppCompat.Button">
+
+    </style>
+
+    <!-- Scientific Calculator Button Styles-->
+    <style name="CalculatorButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="background">@drawable/calculator_button_background</item>
+        <item name="android:background">@drawable/calculator_button_background</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+    <style name="FunctionKeypadStyle" parent="CalculatorButtonStyle">
+        <item name="background">@drawable/calculator_button_background_black</item>
+        <item name="android:background">@drawable/calculator_button_background_black</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MainKeypadStyle" parent="CalculatorButtonStyle">
+        <item name="background">@drawable/calculator_button_background_darkgrey</item>
+        <item name="android:background">@drawable/calculator_button_background_darkgrey</item>
+    </style>
+
+    <style name="NormalTextStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/default_txt_size</item>
+    </style>
+
+    <style name="DarkTextInLight" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="LightTextInDark" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Animation Styles -->
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogFadeAnimation</item>
+    </style>
+
+    <style name="DialogFadeAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Style for FloatingActionButtons-->
+    <style name="floatingActionStyle">
+        <item name="android:tint">@color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_margin">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    <!-- Custom style attributes -->
+    <attr name="backgroundColor" format="reference"/>
+    <attr name="listBackgroundColor" format="reference"/>
+</resources>

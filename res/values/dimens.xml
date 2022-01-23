@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- Default text size-->
+    <dimen name="default_txt_size">14sp</dimen>
+
+    <dimen name="txt_size_18">20sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="standard_calculator_horizontal_margin">16dp</dimen>
+    <dimen name="standard_calculator_vertical_margin">5dp</dimen>
+    <dimen name="date_calculation_margin">40dp</dimen>
+    <dimen name="scientific_calculator_button_margin">4dp</dimen>
+    <dimen name="stat_padding">5dp</dimen>
+
+    <!--Dimensions for text size(font sizes) -->
+    <dimen name="key_pad_text_size">20sp</dimen>
+    <dimen name="secondaryFunctionTextSize">12sp</dimen>
+    <dimen name="stat_data_field_content_size">13sp</dimen>
+    <dimen name="stat_data_field_margin">0.5dp</dimen>
+    <dimen name="stat_table_heading">15sp</dimen>
+    <dimen name="date_calc_txt">18sp</dimen>
+    <dimen name="date_calc_btn">16sp</dimen>
+    <dimen name="stat_row_height">45dp</dimen>
+
+    <!-- Text size for about dialog-->
+    <dimen name="cal_module">25sp</dimen>
+    <dimen name="simplified_cal_module">19sp</dimen>
+    <dimen name="copyright">13sp</dimen>
+    <dimen name="aemis_dev">20sp</dimen>
+    <dimen name="app_features">16sp</dimen>
+
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="dialog_content_padding">16dp</dimen>
+
+    <dimen name="list_item_height">52dp</dimen>
+    <dimen name="list_header_height">56dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+</resources>

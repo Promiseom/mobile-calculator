@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/stat_padding"
+    android:paddingLeft="@dimen/stat_padding"
+    android:paddingRight="@dimen/stat_padding">
+
+    <TableRow
+        android:id="@+id/table_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/stat_row_height"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/stat_data_field_margin"
+            android:text="@string/str_serial_number"
+            android:textSize="@dimen/stat_table_heading"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/stat_data_field_margin"
+            android:text="@string/str_x"
+            android:textSize="@dimen/stat_table_heading"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/stat_data_field_margin"
+            android:text="@string/str_f"
+            android:textSize="@dimen/stat_table_heading"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/stat_data_field_margin"
+            android:text="@string/str_deviation"
+            android:textSize="@dimen/stat_table_heading"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/stat_data_field_margin"
+            android:text="@string/str_deviation_squared"
+            android:textSize="@dimen/stat_table_heading"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/stat_data_field_margin"
+            android:text="@string/str_deviation_squared_times_freq"
+            android:textSize="@dimen/stat_table_heading"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/scroll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:id="@+id/table_layout_data_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- deviation_time_frequency actually means deviation_square_times_frequency, it has been used to avoid
+                problems due to other contentDescriptions being subsets of the contentDescription values-->
+
+                <!--Each data field has a contentDescription, the contentDescriptions are used to identify the data, the fragment class
+                is going to get these fields not with the Id has the number of fields cannot be defined by the
+                application. These fields are going to be gotten by contentDescription.-->
+
+            </TableLayout>
+
+            <Button
+                android:id="@+id/btn_calculate_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_calculate"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

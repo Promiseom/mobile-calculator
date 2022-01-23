@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actions_view_result"
+        android:title="@string/str_view_result"
+        android:icon="@drawable/ic_view_result"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/actions_add_row"
+        android:title="@string/str_add_row"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/actions_calculateStatResult"
+        android:title="@string/str_calculate_result"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/actions_add_rows"
+        android:title="@string/str_add_rows"
+        android:icon="@drawable/ic_add_multiple"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/actions_clear_all_fields"
+        android:title="@string/str_clear_all_fields" />
+    <item
+        android:id="@+id/actions_delete_all_rows"
+        android:title="@string/str_remove_all_rows"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/actions_help"
+        android:title="@string/str_help"
+        android:icon="@drawable/ic_help"
+        app:showAsAction="ifRoom"/>
+</menu>

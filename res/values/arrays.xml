@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="stat_help_items">
+        <item>"Adding/Inserting new rows"</item>
+        <item>"Calculating and Displaying the result"</item>
+        <item>"Using the extended editor"</item>
+        <item>"Selecting rows"</item>
+        <item>"Clearing/Deleting rows"</item>
+    </string-array>
+
+    <string-array name="number_bases">
+        <item>"Binary"</item>
+        <item>"Octal"</item>
+        <item>"Decimal"</item>
+        <item>"Hexadecimal"</item>
+    </string-array>
+
+    <string-array name="number_bases_more">
+        <item>"Binary"</item>
+        <item>"Base 3"</item>
+        <item>"Base 4"</item>
+        <item>"Base 5"</item>
+        <item>"Base 6"</item>
+        <item>"Base 7"</item>
+        <item>"Octal"</item>
+        <item>"Base 9"</item>
+        <item>"Decimal"</item>
+        <item>"Base 11"</item>
+        <item>"Base 12"</item>
+        <item>"Base 13"</item>
+        <item>"Base 14"</item>
+        <item>"Base 15"</item>
+        <item>"Hexadecimal"</item>
+    </string-array>
+
+    <string-array name="pref_themes_entries">
+        <item>"Day"</item>
+        <item>"Night"</item>
+    </string-array>
+
+    <string-array name="pref_themes_values">
+        <item>"0"</item>
+        <item>"1"</item>
+    </string-array>
+
+    <string-array name="pref_calculator_startup_mode_entries">
+        <item>"Default"</item>
+        <item>"Last Mode"</item>
+        <item>"Standard Calculator"</item>
+        <item>"Number Base Converter"</item>
+    </string-array>
+
+    <string-array name="pref_calculator_startup_mode_values">
+        <item>"0"</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+    </string-array>
+
+    <string-array name="pref_calculator_number_precision">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+</resources>
